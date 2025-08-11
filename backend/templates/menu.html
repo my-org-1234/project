@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Fast Food Café Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://www.transparenttextures.com/patterns/blackboard.png') repeat;
+      font-family: 'Roboto', sans-serif;
+      color: #fff;
+    }
+
+    .menu-wrapper {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.85);
+      border: 10px double #ffd700;
+      box-shadow: 0 0 30px #000;
+      border-radius: 12px;
+    }
+
+    h1 {
+      font-family: 'Rock Salt', cursive;
+      font-size: 3.5rem;
+      text-align: center;
+      color: #ffeb3b;
+      text-shadow: 2px 2px #000;
+      margin-bottom: 40px;
+    }
+
+    .category {
+      margin: 30px 0;
+    }
+
+    .category h2 {
+      font-size: 2rem;
+      color: #ff9800;
+      border-bottom: 3px dashed #ff9800;
+      display: inline-block;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+      font-family: 'Rock Salt', cursive;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      font-size: 1.2rem;
+      padding: 8px 0;
+      border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+    }
+
+    .item span:first-child {
+      text-shadow: 1px 1px #000;
+    }
+
+    .price {
+      color: #ffc107;
+      font-weight: bold;
+      text-shadow: 1px 1px #000;
+    }
+
+    .order-btn {
+      display: block;
+      width: 220px;
+      margin: 40px auto 20px;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      font-family: 'Rock Salt', cursive;
+      color: #000;
+      background: #ffeb3b;
+      border: 3px solid #fff;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s;
+      text-align: center;
+      box-shadow: 2px 2px 10px #000;
+      text-decoration: none;
+    }
+
+    .order-btn:hover {
+      background: #ffd700;
+      transform: scale(1.05);
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 1rem;
+      color: #bbb;
+    }
+
+    @media(max-width: 600px) {
+      h1 { font-size: 2rem; }
+      .item { font-size: 1rem; }
+      .category h2 { font-size: 1.5rem; }
+      .order-btn { font-size: 1rem; padding: 10px 20px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="menu-wrapper">
+    <h1>Café Menu</h1>
+
+    <div class="category">
+      <h2>☕ Beverages</h2>
+      <div class="item"><span>Full Tea</span><span class="price">₹20</span></div>
+      <div class="item"><span>Half Tea</span><span class="price">₹10</span></div>
+      <div class="item"><span>Espresso</span><span class="price">₹80</span></div>
+      <div class="item"><span>Americano</span><span class="price">₹90</span></div>
+      <div class="item"><span>Cold Coffee</span><span class="price">₹100</span></div>
+    </div>
+
+    <div class="category">
+      <h2>🥤 Milkshakes</h2>
+      <div class="item"><span>Vanilla Milkshake</span><span class="price">₹120</span></div>
+      <div class="item"><span>Chocolate Milkshake</span><span class="price">₹130</span></div>
+      <div class="item"><span>Oreo Shake</span><span class="price">₹140</span></div>
+    </div>
+
+    <div class="category">
+      <h2>🍔 Burgers</h2>
+      <div class="item"><span>Veg Burger</span><span class="price">₹90</span></div>
+      <div class="item"><span>Cheese Burger</span><span class="price">₹110</span></div>
+      <div class="item"><span>Tandoori Burger</span><span class="price">₹130</span></div>
+    </div>
+
+    <div class="category">
+      <h2>🥪 Sandwiches</h2>
+      <div class="item"><span>Veg Sandwich</span><span class="price">₹100</span></div>
+      <div class="item"><span>Paneer Sandwich</span><span class="price">₹120</span></div>
+    </div>
+
+    <div class="category">
+      <h2>🧁 Bakery</h2>
+      <div class="item"><span>Chocolate Muffin</span><span class="price">₹60</span></div>
+      <div class="item"><span>Paneer Puff</span><span class="price">₹50</span></div>
+    </div>
+
+    <div class="category">
+      <h2>🍝 Meals</h2>
+      <div class="item"><span>White Sauce Pasta</span><span class="price">₹150</span></div>
+      <div class="item"><span>Red Sauce Pasta</span><span class="price">₹140</span></div>
+      <div class="item"><span>Paneer Tikka Pizza</span><span class="price">₹230</span></div>
+    </div>
+
+    <div class="category">
+      <h2>🍟 Sides</h2>
+      <div class="item"><span>French Fries</span><span class="price">₹90</span></div>
+      <div class="item"><span>Peri Peri Fries</span><span class="price">₹100</span></div>
+      <div class="item"><span>Bottled Water</span><span class="price">₹20</span></div>
+    </div>
+
+    <a href="/order" class="order-btn">📋 Place Order</a>
+
+    <div class="footer">
+      <p>Thank you for choosing our café! Enjoy your meal!</p>
+      <p>&copy; 2025 Fast Food Café</p>
+    </div>
+  </div>
+</body>
+</html>
